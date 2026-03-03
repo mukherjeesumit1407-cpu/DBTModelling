@@ -1,0 +1,17 @@
+sumit_dbt_project:
+  outputs:
+    dev:
+      catalog: dbt_dev
+      host: dbc-777777-3554
+      http_path: /sql/1.0/warehouses/xxxxxx
+      schema: default
+      threads: 1
+      type: db
+    prod:
+      catalog: dbt_prod
+      host: dbc-8888888-3554
+      http_path: /sql/1.0/warehouses/xxxxx
+      schema: default
+      threads: 1
+      type: db
+  target: dev
